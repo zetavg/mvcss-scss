@@ -1,1 +1,4 @@
-git clone https://github.com/mvcss/mvcss.git && sass-convert -R -F sass -T scss --indent t --unix-newlines mvcss .
+#!/bin/bash
+
+git clone https://github.com/mvcss/mvcss.git && sass-convert -R -F sass -T scss --indent t --unix-newlines mvcss . && rm -rf mvcss
+
